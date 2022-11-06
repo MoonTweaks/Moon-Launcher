@@ -1,0 +1,2 @@
+E:\.C#\Tweaks\Moon Launcher\MoonLauncher\bin\publish\MoonLauncher.pdb
+E:\.C#\Tweaks\Moon Launcher\MoonLauncher\bin\publish\MoonLauncher.exe

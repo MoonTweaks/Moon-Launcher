@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>E:\.C#\Tweaks\Moon Launcher\MoonLauncher\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Game Performance Boost\GamePerformanceBoost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GetStarted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Tabs\HomeTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Tabs\SettingsTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

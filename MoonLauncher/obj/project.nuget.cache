@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uwiKx6Ru2NZe0PV3922bEJAtSTN+B1Ib9XkK+Cmt4HGzZISPLfn7V1BLfJPEHFo+PtKbba4dc0dX4xMJFKOugQ==",
+  "success": true,
+  "projectFilePath": "E:\\.C#\\Tweaks\\Moon Launcher\\MoonLauncher\\MoonLauncher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\molly\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512"
+  ],
+  "logs": []
+}
