@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using GPB;
+using Microsoft.Win32;
 using MoonLauncher;
 using System;
 using System.Collections.Generic;
@@ -68,13 +69,13 @@ namespace LauncherCore
 
         public static void nsudoCall(string command)
         {
-            Process wdboot = new Process();
-            wdboot.StartInfo.FileName = @"C:\Windows\Temp\NSudoLG.exe";
-            wdboot.StartInfo.Arguments = $"-U:T {command}";
-            wdboot.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            wdboot.StartInfo.CreateNoWindow = true;
-            wdboot.Start();
-            wdboot.WaitForExit();
+            Process nsudo = new Process();
+            nsudo.StartInfo.FileName = @$"{GPBDLL.TempDirectory}\NSudoLG.exe";
+            nsudo.StartInfo.Arguments = $"-U:T {command}";
+            nsudo.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            nsudo.StartInfo.CreateNoWindow = true;
+            nsudo.Start();
+            nsudo.WaitForExit();
         }
     }
 }

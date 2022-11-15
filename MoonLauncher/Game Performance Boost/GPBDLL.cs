@@ -34,17 +34,18 @@ namespace GPB
         public static int GPBEnableValue = Convert.ToInt32(GPBEnable);
         public static int ClearFNCacheValue = Convert.ToInt32(ClearFNCacheEnable);
 
+        public static string TempDirectory = Path.GetTempPath();
+
         public static void ClearTemp(int value)
         {
             if (value == 1)
             {
                 WebClient wb = new WebClient();
-                wb.DownloadFile("https://cdn.discordapp.com/attachments/1029753461929164912/1038159643601547354/temp.bat", @"C:\Windows\Temp\temp.bat");
-                wb.DownloadFile("https://cdn.discordapp.com/attachments/1029753461929164912/1038152072660533458/prefetch.bat", @"C:\Windows\Temp\prefetch.bat");
-                wb.DownloadFile("https://cdn.discordapp.com/attachments/1029755161561813043/1038411175811096607/NSudoLG.exe", @"C:\Windows\Temp\NSudoLG.exe");
-                LauncherCore.MoonLauncher.nsudoCall(@"C:\Windows\Temp\prefetch.bat");
-                LauncherCore.MoonLauncher.nsudoCall(@"C:\Windows\Temp\temp.bat");
-                
+                wb.DownloadFile("https://cdn.discordapp.com/attachments/1029753461929164912/1038159643601547354/temp.bat", $@"{TempDirectory}\temp.bat");
+                wb.DownloadFile("https://cdn.discordapp.com/attachments/1029753461929164912/1038152072660533458/prefetch.bat", $@"{TempDirectory}\prefetch.bat");
+                wb.DownloadFile("https://cdn.discordapp.com/attachments/1029755161561813043/1038411175811096607/NSudoLG.exe", $@"{TempDirectory}\NSudoLG.exe");
+                LauncherCore.MoonLauncher.nsudoCall(@$"{TempDirectory}\prefetch.bat");
+                LauncherCore.MoonLauncher.nsudoCall(@$"{TempDirectory}\temp.bat");
             }
         }
 
